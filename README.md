@@ -7,6 +7,8 @@ This Giphy API project was bootstrapped with [Create React App]
 - Run npm install for updated packages.  <br />
 - Run npm start <br />
 
+- You can then search for any gif you want
+
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
