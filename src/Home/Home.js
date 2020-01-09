@@ -22,7 +22,7 @@ function reducer(state, action) {
 
 const Home = () => {
 	const inpuRef = useRef()
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("sphinx");
   const [state, dispatch] = useReducer(reducer, { gif: [] })
 
   const {gif} = state
