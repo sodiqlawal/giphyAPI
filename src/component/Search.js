@@ -14,8 +14,7 @@ const Search = ({search, searchTerm}) => {
         placeholder="search for your gif" 
         onChange={search}
         className="input"/>
-        
-               
+                       
     </React.Fragment>
   );
 }

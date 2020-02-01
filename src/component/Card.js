@@ -8,7 +8,7 @@ import Search from "./Search";
 const Card = ({state, api_key, dispatch, DISPLAY}) => {
   const inpuRef = useRef()
   const [index, setIndex] = useState(0)
-  const [showId, setShowId] = useState("")
+  const [showId, setShowId] = useState(null)
   const [searchTerm, setSearchTerm] = useState("sphinx");
 
   const {gif} = state
@@ -27,7 +27,7 @@ const Card = ({state, api_key, dispatch, DISPLAY}) => {
     	.then(y => dispatch({ type: DISPLAY, payload: y.data}))
     },[searchTerm])
     
-   const updateId  = id =>{
+   const updateId  = id => {
      setShowId(id)
      console.log("id", id)
    }
@@ -82,7 +82,7 @@ const Card = ({state, api_key, dispatch, DISPLAY}) => {
 
       </div>
       :
-     <Details searchTerm={searchTerm} setIndex={setIndex} id={updateId}/>
+     <Details setIndex={setIndex} id={showId}/>
 
 }
     </React.Fragment>
